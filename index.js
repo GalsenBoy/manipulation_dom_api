@@ -33,6 +33,11 @@ theme.forEach(element => {
 
 /******************************** Personnage Harry Potter ********************************** */
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+//nom = element[getRandomInt(element.length)]
 const perso = document.querySelector('.personnage');
 
 perso.addEventListener('click', () => {
@@ -42,11 +47,9 @@ perso.addEventListener('click', () => {
         })
         .then(function(data) {
             console.log(data)
-
             data.forEach(element => {
                 console.log(element.name);
                 perso.innerHTML = element.name;
             });
-
         })
 });
