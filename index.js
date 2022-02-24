@@ -41,9 +41,12 @@ perso.addEventListener('click', () => {
             return response.json();
         })
         .then(function(data) {
+            console.log(data)
+
             data.forEach(element => {
-                console.log(element.actor);
-                perso.innerHTML = element.actor;
+                console.log(element.name);
+                perso.innerHTML = element.name;
             });
+
         })
 });
