@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div_theme {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.theme {
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#dark {
+    background-color: black;
+}
+
+#aqua {
+    background: aqua;
+}
+
+#salmon {
+    background: salmon;
+}
+
+.theme_dark {
+    background-color: black;
+    color: aqua;
+}
+
+.theme_aqua {
+    background-color: aqua;
+    color: black;
+}
+
+.theme_salmon {
+    background-color: salmon;
+    color: black;
+}
+
+.div_image {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn_appuyer {
+    padding: 1rem 3rem;
+    border-radius: 17rem;
+    background: rgb(184, 178, 178);
+    color: black;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+#btn_appuyer:hover {
+    background: black;
+    color: rgb(184, 178, 178);
+}
+
+.hide {
+    width: 25%;
+    height: 25%;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.lorem {
+    margin-top: 1rem;
+}
+
+.api_personnage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.personnage {
+    padding: 4rem;
+    border-radius: 2rem;
+    background: black;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
