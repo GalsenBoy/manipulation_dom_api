@@ -1,7 +1,7 @@
 /************* Afficher l'mage caché  *************** */
 
 const picshow = document.querySelector('.hide');
-const btn = document.querySelector('#btn_appuyer');
+const btn = document.querySelector('#btn_cliquer');
 
 btn.addEventListener('click', (e) => {
     picshow.classList.toggle('show');
@@ -46,10 +46,9 @@ perso.addEventListener('click', () => {
             return response.json();
         })
         .then(function(data) {
-            console.log(data)
             data.forEach(element => {
-                console.log(element.name);
-                perso.innerHTML = element.name;
+                const nom = element.name[Math.floor(Math.random() * element.name.length)];
+                perso.innerHTML = nom;
             });
         })
 });
